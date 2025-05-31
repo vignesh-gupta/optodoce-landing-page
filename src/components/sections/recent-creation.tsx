@@ -1,5 +1,5 @@
 import { cn } from "@/utils";
-import { karlaFont } from "@/utils/font";
+import { karlaFont, plusJakartaSansGFont } from "@/utils/font";
 import Image from "next/image";
 import React from "react";
 import Button from "../button";
@@ -27,26 +27,26 @@ const gallery = [
 
 const RecentCreationSection = () => {
   return (
-    <section className="container mx-auto py-8 flex flex-col items-center gap-8">
-      <span
-        className={cn(
-          "bg-[#6A41FB33] py-4 px-6 rounded-full text-lg",
-          karlaFont.className
-        )}
-      >
+    <section
+      className={cn(
+        "container mx-auto py-8 flex flex-col items-center gap-8",
+        karlaFont.className
+      )}
+    >
+      <span className="bg-[#6A41FB33] py-4 px-6 rounded-full text-lg">
         Recently Created
       </span>
 
-      <h3 className="lg:text-5xl md:text-3xl text-2xl max-w-4xl font-semibold">
+      <h3
+        className={cn(
+          "lg:text-5xl md:text-3xl text-2xl max-w-4xl font-semibold",
+          plusJakartaSansGFont.className
+        )}
+      >
         Create anything with <span className="text-gradient">Optpdoce</span> AI
       </h3>
 
-      <p
-        className={cn(
-          "text-center max-w-2xl md:text-2xl text-xl",
-          karlaFont.className
-        )}
-      >
+      <p className="text-center max-w-2xl md:text-2xl text-xl">
         {["All", "|", "Cartoon", "|", "Realistic", "|", "3D"].map(
           (val, idx) => (
             <span
@@ -74,7 +74,6 @@ const RecentCreationSection = () => {
             alt={`Gallery Item ${index + 1}`}
             height={500}
             width={500}
-            objectFit="cover"
           />
         ))}
       </div>

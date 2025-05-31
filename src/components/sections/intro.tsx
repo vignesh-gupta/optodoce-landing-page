@@ -7,8 +7,8 @@ import { SparkleIcon } from "lucide-react";
 
 const IntroSection = () => {
   return (
-    <section className="bg-white pt-6 pb-20 text-black">
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 items-end gap-8">
+    <div className="bg-white pt-6 pb-20 text-black">
+      <section className={cn("container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 items-end gap-8", karlaFont.className)}>
         <Image
           src="/intro/main.png"
           alt="Intro main avatar"
@@ -19,10 +19,7 @@ const IntroSection = () => {
 
         <div className="flex flex-col gap-6 items-start">
           <span
-            className={cn(
-              "bg-[#6A41FB33] py-4 px-6 rounded-full text-black text-lg",
-              karlaFont.className
-            )}
+            className="bg-[#6A41FB33] py-4 px-6 rounded-full text-black text-lg"
           >
             Introduce optpdoce AI
           </span>
@@ -54,15 +51,15 @@ const IntroSection = () => {
             <div className="flex items-center gap-2">
               <SparkleIcon fill="#6A41FB" className="size-6 stroke-[#6A41FB] " />
 
-              <p className={cn("flex-1 text-lg", karlaFont.className)}>
+              <p className="flex-1 text-lg">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
