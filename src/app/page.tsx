@@ -4,11 +4,12 @@ import IntroSection from "@/components/sections/intro";
 import MissionSection from "@/components/sections/mission";
 import RecentCreationSection from "@/components/sections/recent-creation";
 import WorkSection from "@/components/sections/work";
+import Footer from "@/components/footer";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative mb-20">
+    <main className="relative">
       <Image
         src="Ellipse-1.svg"
         alt="Hero Float Left"
@@ -35,6 +36,8 @@ export default function Home() {
         <MissionSection />
         <WorkSection />
       </div>
+      
+      <Footer />
     </main>
   );
 }
