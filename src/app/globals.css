@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-[#6A41FB] to-[#F49957] text-white;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-[#6A41FB] to-[#F49957] text-transparent bg-clip-text;
+}

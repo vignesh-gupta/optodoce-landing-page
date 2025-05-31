@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative mb-20">
       <Image
         src="Ellipse-1.svg"
         alt="Hero Float Left"
         width={1100}
-        height={100}
-        className="absolute left-[50%] -top-5 -translate-x-[50%]  z-[-1]"
+        height={50}
+        className="absolute left-[50%] -top-5 -translate-x-[50%] z-[-1] min-w-[100%] h-[550px] object-contain"
       />
 
       <Image
@@ -18,7 +18,7 @@ export default function Home() {
         alt="Hero Float Left"
         width={550}
         height={100}
-        className="absolute left-[50%] -top-5 -translate-x-[50%]  z-[-1]"
+        className="absolute left-[50%] -top-5 -translate-x-[50%] z-[-1] min-w-1/2 h-[225px] object-contain"
       />
       <Navbar />
       <HeroSection />
