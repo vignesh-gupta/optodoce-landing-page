@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/hero";
 import IntroSection from "@/components/sections/intro";
 import MissionSection from "@/components/sections/mission";
 import RecentCreationSection from "@/components/sections/recent-creation";
+import WorkSection from "@/components/sections/work";
 import Image from "next/image";
 
 export default function Home() {
@@ -25,9 +26,15 @@ export default function Home() {
       />
       <Navbar />
       <HeroSection />
-      <IntroSection />
+      <div className="bg-white pt-6 pb-20 text-black">
+        <IntroSection />
+      </div>
       <RecentCreationSection />
-      <MissionSection />
+
+      <div className="bg-white text-black">
+        <MissionSection />
+        <WorkSection />
+      </div>
     </main>
   );
 }
