@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="relative flex flex-col gap-y-4 items-center justify-center ">
         <h1
           className={cn(
-            "lg:text-7xl md:text-6xl text-5xl max-w-4xl text-center font-extralight ",
+            "lg:text-7xl md:text-6xl text-5xl max-w-4xl text-center",
             plusJakartaSansGFont.className
           )}
         >
