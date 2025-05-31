@@ -28,7 +28,7 @@ const IntroSection = () => {
           </span>
 
           <h2 className="lg:text-6xl md:text-4xl text-3xl max-w-4xl font-semibold">
-            Unlocking the Power of AI for a Smarter Future
+            Unlocking the Power of <span className="text-gradient">AI for a Smarter</span> Future
           </h2>
 
           <div className="flex gap-4 flex-wrap">

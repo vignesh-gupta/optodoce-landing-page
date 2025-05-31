@@ -7,7 +7,7 @@ import { karlaFont, plusJakartaSansGFont } from "@/utils/font";
 
 const HeroSection = () => {
   return (
-    <section className=" pt-48 container mx-auto">
+    <section className=" pt-48 container mx-auto pb-24">
       <div className="relative flex flex-col gap-y-4 items-center justify-center ">
         <h1
           className={cn(
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
         <p
           className={cn(
-            "space-x-2 flex mt-2 items-center text-sm ",
+            "space-x-2 flex mt-2 items-center text-sm flex-wrap",
             plusJakartaSansGFont.className
           )}
         >

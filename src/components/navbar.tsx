@@ -12,9 +12,9 @@ const Navbar = () => {
         alt="Logo"
         width={150}
         height={100}
-        className="object-contain"
+        className="object-contain hidden lg:block"
       />
-      <div className="flex items-center gap-4">
+      <div className="items-center gap-4 hidden lg:flex">
         <Button text="Login" />
         <Button text="Sign Up" gradient />
       </div>
