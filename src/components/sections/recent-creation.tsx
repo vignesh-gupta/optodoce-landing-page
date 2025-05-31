@@ -29,7 +29,7 @@ const RecentCreationSection = () => {
   return (
     <section
       className={cn(
-        "container mx-auto py-8 flex flex-col items-center gap-8",
+        "container mx-auto py-16 flex flex-col items-center gap-8",
         karlaFont.className
       )}
     >

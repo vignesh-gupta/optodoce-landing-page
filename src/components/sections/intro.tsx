@@ -8,7 +8,7 @@ import { SparkleIcon } from "lucide-react";
 const IntroSection = () => {
   return (
     <div className="bg-white pt-6 pb-20 text-black">
-      <section className={cn("container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 items-end gap-8", karlaFont.className)}>
+      <section className={cn("container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8", karlaFont.className)}>
         <Image
           src="/intro/main.png"
           alt="Intro main avatar"
@@ -17,7 +17,7 @@ const IntroSection = () => {
           width={800}
         />
 
-        <div className="flex flex-col gap-6 items-start">
+        <div className="flex flex-col gap-6 items-start lg:mt-20">
           <span
             className="bg-[#6A41FB33] py-4 px-6 rounded-full text-black text-lg"
           >

@@ -12,7 +12,14 @@ export const plusJakartaSansGFont = Plus_Jakarta_Sans({
 
 export const nunitoSansFont = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: "variable",
   variable: "--font-nunito-sans",
+  display: "swap",
+});
+
+export const nunitoSansBoltFont = Nunito_Sans({
+  subsets: ["latin"],
+  weight: "900",
+  variable: "--font-nunito-bold-sans",
   display: "swap",
 });
