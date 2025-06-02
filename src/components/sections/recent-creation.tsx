@@ -1,8 +1,9 @@
 import { cn } from "@/utils";
-import { karlaFont, plusJakartaSansGFont } from "@/utils/font";
+import { plusJakartaSansGFont } from "@/utils/font";
 import Image from "next/image";
 import React from "react";
 import Button from "../button";
+import MaxWidthWrapper from "../max-width-wrapper";
 
 const gallery = [
   {
@@ -27,19 +28,14 @@ const gallery = [
 
 const RecentCreationSection = () => {
   return (
-    <section
-      className={cn(
-        "container mx-auto py-16 flex flex-col items-center gap-8",
-        karlaFont.className
-      )}
-    >
+    <MaxWidthWrapper className="py-16 flex flex-col items-center gap-8">
       <span className="bg-[#6A41FB33] py-4 px-6 rounded-full text-lg">
         Recently Created
       </span>
 
       <h3
         className={cn(
-          "lg:text-5xl md:text-3xl text-2xl max-w-4xl font-semibold",
+          "lg:text-5xl md:text-3xl text-2xl max-w-4xl font-semibold text-center",
           plusJakartaSansGFont.className
         )}
       >
@@ -62,11 +58,11 @@ const RecentCreationSection = () => {
         )}
       </p>
 
-      <div className="grid lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {gallery.map((item, index) => (
           <Image
             className={cn(
-              "size-full object-cover rounded-lg shadow-lg",
+              "w-full sm:w-2/3 h-auto md:size-full object-cover rounded-lg lg:aspect-auto aspect-square mx-auto",
               item.className
             )}
             key={`gallery-item-${index}`}
@@ -79,7 +75,7 @@ const RecentCreationSection = () => {
       </div>
 
       <Button text="Go to our AI gallery" gradient className="mt-8" />
-    </section>
+    </MaxWidthWrapper>
   );
 };
 

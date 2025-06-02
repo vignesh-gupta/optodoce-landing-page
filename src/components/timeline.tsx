@@ -7,7 +7,7 @@ interface TimelineStep {
   description: string;
 }
 
-const timelineData: TimelineStep[] = [
+export const timelineData: TimelineStep[] = [
   {
     id: "01",
     title: "LET'S HAVE A CUP OF COFFEE:",
@@ -36,7 +36,7 @@ const timelineData: TimelineStep[] = [
 
 const Timeline = () => {
   return (
-    <div className="relative max-w-6xl mx-auto py-12">
+    <div className="relative max-w-6xl mx-auto py-12 md:block hidden">
       
       <div className="relative space-y-32">
         <div
@@ -50,7 +50,7 @@ const Timeline = () => {
         {timelineData.map((step, idx) => (
           <div key={step.id} className="relative flex items-center">
             <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
-              <div className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full outline-2 outline-offset-4 outline-red-500 shadow-lg" />
+              <div className="size-5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full outline-2 outline-offset-4 outline-red-500 shadow-lg" />
             </div>
 
             <div

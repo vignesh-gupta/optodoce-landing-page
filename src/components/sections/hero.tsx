@@ -3,13 +3,12 @@ import Button from "../button";
 import { cn } from "@/utils";
 import Image from "next/image";
 import HeroGrid from "../hero-grid";
-import { karlaFont, plusJakartaSansGFont } from "@/utils/font";
+import { plusJakartaSansGFont } from "@/utils/font";
+import MaxWidthWrapper from "../max-width-wrapper";
 
 const HeroSection = () => {
   return (
-    <section
-      className={cn("pt-48 container mx-auto pb-24", karlaFont.className)}
-    >
+    <MaxWidthWrapper className="md:pt-48 pt-12 pb-24">
       <div className="relative flex flex-col gap-y-4 items-center justify-center ">
         <h1
           className={cn(
@@ -69,7 +68,7 @@ const HeroSection = () => {
       </div>
 
       <HeroGrid />
-    </section>
+    </MaxWidthWrapper>
   );
 };
 

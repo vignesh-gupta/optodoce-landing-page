@@ -1,9 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import MaxWidthWrapper from "../max-width-wrapper";
+import { nunitoSansFont } from "@/utils/font";
+import { cn } from "@/utils";
 
 const MissionSection = () => {
   return (
-    <section className="container mx-auto py-24 ">
+    <MaxWidthWrapper className={cn("py-16", nunitoSansFont.className)}>
       <div className="grid lg:grid-cols-2 items-center gap-8">
         <div>
           <h3 className="lg:text-3xl text-2xl max-w-4xl font-semibold">
@@ -30,7 +33,7 @@ const MissionSection = () => {
       <span className="font-extrabold text-[13rem] text-[#55b1b1] opacity-15 hidden lg:inline-block">
         MISSION
       </span>
-    </section>
+    </MaxWidthWrapper>
   );
 };
 

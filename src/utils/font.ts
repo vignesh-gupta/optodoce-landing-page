@@ -16,10 +16,3 @@ export const nunitoSansFont = Nunito_Sans({
   variable: "--font-nunito-sans",
   display: "swap",
 });
-
-export const nunitoSansBoltFont = Nunito_Sans({
-  subsets: ["latin"],
-  weight: "900",
-  variable: "--font-nunito-bold-sans",
-  display: "swap",
-});

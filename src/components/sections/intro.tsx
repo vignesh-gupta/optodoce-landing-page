@@ -1,18 +1,12 @@
-import { cn } from "@/utils";
-import { karlaFont } from "@/utils/font";
 import Image from "next/image";
 import React from "react";
 import Button from "../button";
 import { SparkleIcon } from "lucide-react";
+import MaxWidthWrapper from "../max-width-wrapper";
 
 const IntroSection = () => {
   return (
-    <section
-      className={cn(
-        "container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8",
-        karlaFont.className
-      )}
-    >
+    <MaxWidthWrapper className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
       <Image
         src="/intro/main.png"
         alt="Intro main avatar"
@@ -61,7 +55,7 @@ const IntroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MaxWidthWrapper>
   );
 };
 
